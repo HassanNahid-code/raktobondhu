@@ -20,7 +20,13 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-red-100 py-16 text-center">
+      <section className="bg-red-100 py-16 text-center relative overflow-hidden">
+  <img
+    src="/images/hero-blood-donation.jpg"
+    alt="থ্যালাসেমিয়া সচেতনতা হিরো ছবি"
+    className="absolute inset-0 w-full h-full object-cover opacity-20"
+  />
+  <div className="relative z-10">
         <h2 className="text-4xl font-bold text-red-700 mb-4">থ্যালাসেমিয়া প্রতিরোধে সচেতন হোন</h2>
         <p className="text-lg mb-6">থ্যালাসেমিয়া একটি বংশগত রক্তরোগ, যা সচেতনতার মাধ্যমেই প্রতিরোধযোগ্য।</p>
         <div className="space-x-4">
@@ -28,7 +34,8 @@ export default function HomePage() {
           <Button variant="outline">যোগাযোগ করুন</Button>
           <Button variant="secondary">রোগী রেজিস্ট্রেশন</Button>
         </div>
-      </section>
+      </div>
+</section>
 
       {/* About Thalassemia */}
       <section id="about" className="py-12 px-4 max-w-5xl mx-auto">
@@ -104,4 +111,3 @@ export default function HomePage() {
     </div>
   );
 }
-
